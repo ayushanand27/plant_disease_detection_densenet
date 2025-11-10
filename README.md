@@ -5,7 +5,7 @@ A complete, Colab-ready pipeline to train a multi-class plant disease classifier
 - Framework: PyTorch + timm (EfficientNet-B3 default)
 - Augmentation: Albumentations
 - Dataset Fetch: kagglehub
-- Training schedule: 2 warmup epochs + 7 main epochs (early stopping enabled)
+- Training schedule: 2 warmup epochs + 17 main epochs (early stopping enabled)
 - Metrics: Accuracy, Precision, Recall, F1 (macro for multiclass), ROC-AUC (macro OVR)
 
 ---
