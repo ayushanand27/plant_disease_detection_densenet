@@ -81,7 +81,7 @@ If something goes wrong:
 3. Mount Google Drive (for checkpoints) and set paths.
 4. Download dataset via `kagglehub` (no manual Kaggle CLI setup required).
 5. Prepare train/val/test splits (auto-detects if dataset already provides split).
-6. Run the full training pipeline (2 warmup + 7 main epochs) with AMP and early stopping.
+6. Run the full training pipeline (2 warmup + 17 main epochs) with AMP and early stopping.
 7. Evaluate on the test set with TTA and view metrics + confusion matrix.
 
 All required cells are provided below.
