@@ -142,7 +142,7 @@ This project trains a high-accuracy yet GPU-efficient multi-class image classifi
 - Pretrained vision backbones from `timm` (EfficientNet-B3 by default) for strong transfer learning.
 - Robust augmentations via `albumentations` to generalize across lighting, pose, and mild geometric changes.
 - Mixed precision (AMP) to maximize throughput and reduce VRAM use on Colab GPUs.
-- A two-phase schedule (2 warmup + 7 main) with ReduceLROnPlateau and early stopping to converge fast within session limits.
+- A two-phase schedule (2 warmup + 17 main) with ReduceLROnPlateau and early stopping to converge fast within session limits.
 - Drive-based checkpointing to survive Colab disconnects and support resuming.
 - Multiclass-safe evaluation with macro metrics and optional TTA for a small inference boost.
 
@@ -245,7 +245,7 @@ Checkpointing & Resume
 - Scheduler: ReduceLROnPlateau (mode='max', factor=0.5, patience=2)
 - Early stopping patience: 4 epochs
 - Mixed Precision: Enabled on CUDA (torch.amp autocast + GradScaler)
-- Epochs: 2 (warmup) + 7 (main)
+- Epochs: 2 (warmup) + 17 (main)
 
 You can change epochs in the `Cfg.PHASES` dictionary.
 
@@ -283,7 +283,7 @@ The complete set of cells to run in Colab, in order, is included in the assistan
 3) Dataset download + split prep
 4) Config + transforms + loaders + model + evaluation
 5) Training utilities (AMP, LR scheduler, early stopping, resume)
-6) Train: warmup (2) + main (7)
+6) Train: warmup (2) + main (17)
 7) Test + TTA + confusion matrix
 
 You can also place them into a single Colab notebook and run sequentially.
