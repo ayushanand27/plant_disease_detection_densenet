@@ -36,7 +36,7 @@ What happens step by step:
 6) Build the model (EfficientNet‑B3) with the final layer sized to the number of classes.
 7) Train in two phases:
    - Warmup: 2 quick epochs at a slightly higher LR (sanity check and speed up convergence).
-   - Main: 7 epochs at a standard LR (with early stopping if there’s no improvement for 4 epochs).
+   - Main: 17 epochs at a standard LR (with early stopping if there’s no improvement for 4 epochs).
 8) During training:
    - I track accuracy, precision, recall, F1, and AUC on the validation set.
    - If validation accuracy improves, I save a “best” checkpoint to Drive.
