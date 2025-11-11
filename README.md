@@ -10,7 +10,7 @@ A complete, Colab-ready pipeline to train a multi-class plant disease classifier
 
 ---
 
-## Plain-English Overview (Read me first)
+## Overview 
 
 This project teaches a computer to recognize plant diseases from leaf photos. I use a public Kaggle dataset (about 88k images) and a proven image model (EfficientNet-B3) that was pretrained on millions of images. I fine‑tune it on plant leaves so it learns the visual patterns of each disease.
 
