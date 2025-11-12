@@ -1,4 +1,4 @@
-# Plant Disease Detection (PyTorch, Colab-Optimized)
+# Plant Disease Detection (PyTorch)
 
 A complete, Colab-ready pipeline to train a multi-class plant disease classifier using the Kaggle dataset "vipoooool/new-plant-diseases-dataset". The notebook is optimized for Google Colab Free, includes mixed precision (AMP), early stopping, LR scheduling, checkpointing to Google Drive, resume support, and test-time augmentation (TTA).
 
